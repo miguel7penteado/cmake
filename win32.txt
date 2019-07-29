@@ -1,0 +1,8 @@
+Correções Win32
+```
+cmake -G "Visual Studio 14 Win64" path\to\source\dir
+msbuild Project.sln
+
+cmake -G "NMake Makefiles" path\to\source\dir
+nmake
+```
