@@ -66,3 +66,28 @@ ninja
 for i in `ls | grep -v -e 'README.md$' |grep -v -e 'CMakeLists.txt$' |grep -v -e 'cabecalhos$' |grep -v -e 'construcao$' |grep -v -e 'fonte$'` ; do rm -rf "$i"; done;
 ```
 
+### Compilação e construção no Windows:
+
+#### Compilação e construção no Linux usando o CMAKE + Microsoft NMake:
+```cmd
+# criando o projeto
+cd construcao
+cmake -G "NMake Makefiles" ..\
+# compilando e gerando o binário executável
+nmake
+```
+#### Compilação e construção no Linux usando o CMAKE + Ninja:
+```cmd
+# criando o projeto
+cd construcao
+cmake -G "Ninja" ..\
+# compilando e gerando o binário executável
+ninja
+```
+
+## Apagando arquivos temporários
+```cmd
+# apagando arquivos temporários
+for /F %f in ('dir /b .\construir\') do del /f /s /q .\construir\%f
+for /F %f in ('dir /b .\construir\') do rmdir /s /q .\construir\%f
+```
