@@ -1,8 +1,7 @@
 # Apresentando CMake e Ninja
 
 Os seguintes projetos tem por objetivo aprender a utilizar a ferramenta 
-multiplataforma de construção de projetos **CMake** através da linha de 
-comando.
+multiplataforma de construção de projetos `C++ denominada` **CMake** .
 
 O uso destas duas ferramentas em **C++**, assim como o uso do 
 `maven` ( ou do `gradle`) no **java**, se propoem a libertar o usuário 
